@@ -1,0 +1,5 @@
+FROM ubuntu:latest
+
+RUN echo '(shell from) 안녕하셉세여'
+RUN ["echo", "(exec from) 안녕하셉세여"]
+RUN ["bash", "-c", "echo '(exec from) 안녕하셉세여'"]
